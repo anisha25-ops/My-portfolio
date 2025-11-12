@@ -1,0 +1,272 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 115px;
+        /* 👈 important: fixes title hiding under header */
+    }
+
+    
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: bisque;
+        height: 15vh;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* ensures header stays above content */
+    }
+
+    h1 {
+        color: brown;
+        padding-left: 2%;
+        font-size: 300%;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+        /* list-style: none; */
+        padding-right: 2%;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 150%;
+        color: brown;
+        font-weight: bold;
+        border: 2px solid brown;
+        padding: 5px 10px;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #f5deb3;
+    }
+
+    footer {
+        background-color: #ffe4c4;
+        padding: 1.5%;
+        text-align: center;
+        height: 14vh;
+        position: sticky;
+        bottom: 0;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-size: 130%;
+        color: brown;
+    }
+
+    /* ========================= Sections ========================= */
+
+    #home,
+    #about,
+    #qualification,
+    #skill,
+    #project,
+    #contact {
+        flex-wrap:wrap;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+
+    #home h1,
+    #about h1,
+    #project h1,
+    #contact h1 {
+        display: grid;
+        font-size: 300%;
+        margin-bottom: 3%;
+        text-align: center;
+        color: chocolate;
+    }
+
+    #home p,
+    #contact p {
+        font-size: 150%;
+        text-align: center;
+        color: brown;
+    }
+
+    /* About */
+    .detail {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 1%;
+        align-items: center;
+    }
+
+    .detail p {
+        font-size: 150%;
+        text-align: center;
+        line-height: 150%;
+        color: brown;
+    }
+
+    .p {
+        width: 40vw;
+    }
+
+    #about img {
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Qualification */
+    #qualification {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    #qualification h1 {
+        font-size: 200%;
+    }
+
+    #qualification p {
+        color: brown;
+    }
+
+    h2 {
+        color: darkorange;
+        padding: 2%;
+    }
+
+    h3 {
+        color: brown;
+    }
+
+    /* Skill */
+    #skill {
+        width: 100%;
+    }
+
+    #skill h1 {
+        display: flex;
+        font-size: 275%;
+        margin-bottom: 1%;
+        justify-content: center;
+        text-align: center;
+        color: chocolate;
+    }
+
+    #skill img {
+        display: flex;
+        height: 15vh;
+        justify-content: center;
+    }
+
+    #skill h2 {
+        color: brown;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 6%;
+    }
+
+     /* project */
+     #project h1{
+        margin-bottom: 45%;
+     }
+    /* Contact */
+    #contact p {
+        font-size: 150%;
+        padding-top: 5%;
+    }
+
+    #connect1{
+        padding-top:10%;
+        padding: 13%;
+    }
+
+    #a,#b,#c{
+        display: flex;
+        flex-direction:row;
+        padding: 5%;
+        
+     }
+
+    #connect1,
+    #connect2 {
+        margin-top:4%;
+        text-align: center;
+    }
+
+    #page {
+        border: 2px solid brown;
+        color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+        width: 30vw;
+        height: 35vh;
+        margin: 2% auto;
+    }
+
+    #page input {
+        padding:1%
+    }
+
+
+    #all {
+        display: flex;
+        padding-top: 1%;
+        justify-content: center;
+    }
+    
+
+    button {
+        border: 2px solid brown;
+        padding: 2% 15%;
+        background-color: darkorange;
+        border-radius: 23%;
+        cursor: pointer;
+    }
+
+    /* ========================= Responsive ========================= */
+   /*mobile*/
+    @media (max-width: 300px) {
+        body{
+            font-size:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    /*tablet*/
+    @media(min-width:601px)and (max-width: 1024){
+      body{
+        font-size: 9px;
+        text-align:center;
+      }
+    }
+
+    /*laptop/desktop*/
+    @media( max-width: 1445){
+        body{
+            font-size: 9px;
+        }
+    }
+
